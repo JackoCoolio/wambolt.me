@@ -1,9 +1,24 @@
 import React from 'react';
 import styles from '../styles/banner.module.scss';
 
+import Link from 'next/link';
+
 class Banner extends React.Component {
 
     render() {
+
+        let array = [];
+        for (let button of this.props.buttons) {
+            array.push(
+                <li key={button.text} className={styles.bannerElement}>
+
+                    <div className={`${styles.bannerLink}`}>
+                        <Link href={button.link} ><h1>{button.text}</h1></Link>
+                    </div>
+                </li>
+            );
+        }
+
         return (
             <div id={styles.banner}>
                 <ul id={styles.bannerMenu}>
@@ -11,9 +26,9 @@ class Banner extends React.Component {
                         <div id={styles.portrait}></div>
                     </li>
                     <li className={styles.bannerElement}>
-                        <h1>Jackson Wambolt</h1>
+                        <h1 style={{fontFamily: 'Lemon Milk Bold'}}>Jackson Wambolt</h1>
                     </li>
-                    <li className={`${styles.bannerElement} ${styles.bannerDivider}`}/>
+                    {array}
                 </ul>
             </div>
         );

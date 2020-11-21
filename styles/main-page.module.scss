@@ -1,0 +1,50 @@
+@import 'variables.scss';
+
+// move this
+#main {
+    position: fixed;
+
+    background-color: $background-color;
+    top: $banner-height;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-color: dark;
+}
+
+.section {
+    position: relative;
+
+    margin-top: $banner-height;
+
+    margin: {
+        bottom: 0;
+        left: 10%;
+        right: 10%;
+    }
+
+    padding: {
+        top: 0;
+        bottom: $banner-height;
+    }
+    
+    color: $text-color;
+
+    border-bottom: 2px solid $accent-color;
+}
+
+.section h1 {
+    font-family: 'Lemon Milk Light';
+    text-align: center;
+    margin-bottom: $banner-height / 4;
+}
+
+.sectionBody {
+    padding-top: $banner-height / 4;
+    font-family: 'Fira Code';
+    font-size: 18px;
+}

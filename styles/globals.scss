@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+@font-face {
+    font-family: 'Lemon Milk Bold';
+    src: url(../fonts/LEMONMILK-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Lemon Milk Light';
+    src: url(../fonts/LEMONMILK-Light.otf) format('opentype');
+}
+
+@import 'variables.scss';
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Fira Code, Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: rgba($accent-color, 0.99);
+    opacity: 100%;
+}

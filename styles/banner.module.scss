@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-
-$banner-height: 75px;
+@import 'variables.scss';
 
 .container {
     font-family: 'Segoe UI';
@@ -8,12 +6,17 @@ $banner-height: 75px;
 }
 
 #banner {
-    background-color: #2b2b2b;
+    background-color: $secondary-color;
     position: fixed;
     height: $banner-height;
+    min-width: 100%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
     left: 0;
     right: 0;
     top: 0;
+    border-bottom: 2px solid $accent-color;
 }
 
 #bannerMenu {
@@ -24,13 +27,14 @@ $banner-height: 75px;
 }
 
 .bannerElement {
-    float: left;
+    display: inline-block;
     padding: {
         right: $banner-height * .3;
     }
     margin: 0;
-    color: #ffffff;
-    font-family: 'Fira Code';
+
+    color: $text-color;
+    font-family: 'Lemon Milk Light';
 }
 
 .bannerElement h1 {
@@ -39,17 +43,22 @@ $banner-height: 75px;
     line-height: $banner-height * .8;
 }
 
-.bannerDivider {
-    // height: $banner-height * .8;
-    // border-left: 2px solid white;
+.bannerLink:hover {
+    color: $accent-color;
 
-    padding: 0;
-    margin-top: $banner-height * .15;
-    display: block;
-    height: $banner-height * .5;
-    width: 1px;
-    background-color: #858585;
+    cursor: pointer;
 }
+
+// Unused as of now
+// .bannerDivider {
+//     padding: 0;
+//     margin-top: $banner-height * .15;
+//     margin-right: $banner-height * .3;
+//     display: block;
+//     height: $banner-height * .5;
+//     width: 1px;
+//     background-color: #858585;
+// }
 
 #portrait {
     position: relative;
