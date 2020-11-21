@@ -1,5 +1,11 @@
 @import 'variables.scss';
 
+#main a:hover {
+    color: $accent-color;
+
+    cursor: pointer;
+}
+
 // move this
 #main {
     position: fixed;
@@ -37,14 +43,8 @@
     border-bottom: 2px solid $accent-color;
 }
 
-.section h1 {
+.sectionTitle {
     font-family: 'Lemon Milk Light';
     text-align: center;
     margin-bottom: $banner-height / 4;
-}
-
-.sectionBody {
-    padding-top: $banner-height / 4;
-    font-family: 'Fira Code';
-    font-size: 18px;
 }

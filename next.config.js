@@ -6,7 +6,8 @@ module.exports = {
         { dev, dir, outDir, distDir, buildId }) {
 
             return {
-                '/': { page: '/' }
+                '/': { page: '/' },
+                '/harmony-engine': { page: '/harmony-engine' }
             };
 
     }
