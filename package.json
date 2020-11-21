@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "build-and-start": "next build & next start"
+    "export": "npm run build && next export"
   },
   "dependencies": {
     "next": "10.0.2",
