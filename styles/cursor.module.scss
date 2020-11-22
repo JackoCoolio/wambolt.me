@@ -1,7 +1,8 @@
 @import 'variables.scss';
 
 #cursor {
-    border-left: .1em solid $text-color;
+    border-left-width: 2px;
+    border-left-style: solid;
     animation: blink .7s steps(1) infinite;
   }
   

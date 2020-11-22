@@ -50,7 +50,12 @@
 }
 
 #aboutMeBody {
-    padding-top: $banner-height / 4;
+    padding: {
+        top: $banner-height / 4;
+        left: $banner-height / 4;
+        right: $banner-height / 4;
+
+    };
     font-family: 'Fira Code';
     font-size: 18px;
 }
@@ -61,6 +66,8 @@
     background-repeat: no-repeat;
 
     background-position: 50% 20%;
+
+    border-radius: 30px;
     
     width: 100%;
     min-height: 500px;

@@ -5,9 +5,9 @@ class Typing extends React.Component {
     constructor(props) {
         super(props);
 
-        this.currentChar = 0;
-
+        console.log('constructor');
         this.state = {
+            typing: false,
             text: '',
             speed: 150,
             deleting: false,
@@ -16,7 +16,22 @@ class Typing extends React.Component {
     }
 
     componentDidMount() {
-        this.type();
+        console.log('component mounted');
+        if (this.props.startDelay) {
+            setTimeout(this.startType, this.props.startDelay);
+        } else {
+            this.startType();
+        }
+    }
+
+    startType = () => {
+        console.log('startType()');
+        if (!this.state.typing) {
+            this.type();
+            this.setState({
+                typing: true
+            });
+        }
     }
 
     type = () => {
@@ -35,7 +50,7 @@ class Typing extends React.Component {
         // type
         this.setState({
             text: deleting ? targetText.substring(0, text.length - 1) : targetText.substring(0, text.length + 1),
-            speed: deleting ? 50 : 150
+            speed: deleting ? 50 : (this.props.speed ? this.props.speed : 150)
         });
 
         // we have deleted everything, next string
@@ -55,14 +70,14 @@ class Typing extends React.Component {
             }, delay);
         }
 
+        console.log(this.state.speed);
         setTimeout(this.type, this.state.speed);
     }
 
     render() {
         return (<>
             <span>{this.state.text}</span>
-        </>
-        );
+        </>);
     }
 
 }

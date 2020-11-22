@@ -38,12 +38,12 @@ export default function Home() {
                         <div className={styles.galleryColumn}>
                             <div className={styles.galleryElement}>
                                 <div style={{ fontFamily: 'Fira Code', textAlign: 'center', fontSize: '18px' }}>
-                                    I am a<Typing text={[' Programmer.', 'n Artist.', ' Musician.']} cycle='true' delay='2000' /><Cursor />
                                 </div>
 
+                                <h2 style={{ textAlign: 'center', width: '100%' }}><Typing text="Hi! I'm Jackson." startDelay='2000' /><Cursor /></h2>
                                 <div id={styles.aboutMeBody}>
                                     <p>
-                                        Hi! My name is Jackson, and I'm currently studying at the University of Wisconsin - Madison,
+                                        I'm currently studying at the University of Wisconsin - Madison,
                                         where I plan to major in Computer Science with a certificate in Mathematics.
                                         Programming has been a passion of mine ever since elementary school, and I've followed that passion for the past
                                         seven years.
