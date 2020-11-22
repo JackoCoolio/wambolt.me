@@ -70,6 +70,13 @@
     background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 450px) {
+    #portrait {
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
 #main {
     position: absolute;
 
