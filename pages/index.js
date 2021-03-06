@@ -66,7 +66,7 @@ export default function Home() {
                                 </p>
                             </div>
                             <div className={`${styles.galleryElement} ${styles.projectElement}`}>
-                                <h2 className={styles.galleryTitle}><Link href="/" passHref><a>Starboard</a></Link> (Feb 2020)</h2>
+                                <h2 className={styles.galleryTitle}><Link href="https://github.com/JackoCoolio/starboard" passHref><a>Starboard</a></Link> (Feb 2020 - Present)</h2>
                                 <h3 className={styles.gallerySubtitle}>A Node.js Discord bot.</h3>
                                 <p>Reacting to a message with a star emoji puts the message in a designated "starboard" channel. I'm currently running this bot on a
                                 Raspberry Pi for a personal Discord server.
@@ -78,6 +78,11 @@ export default function Home() {
                                 <h2 className={styles.galleryTitle}><Link href="https://github.com/JackoCoolio/wambolt.me" passHref><a>Personal Website</a></Link> (Nov 2020 - Present)</h2>
                                 <h3 className={styles.gallerySubtitle}>A website built with Next.js.</h3>
                                 <p>I finally bit the bullet and decided to learn web development.</p>
+                            </div>
+                            <div className={`${styles.galleryElement} ${styles.projectElement}`}>
+                                <h2 className={styles.galleryTitle}>Typing Test</h2>
+                                <h3 className={styles.gallerySubtitle}>A <Link href="https://monkeytype.com/" passHref><a>Monkeytype</a></Link>-reminiscent typing test built with Electron, React, and Webpack.</h3>
+                                <p>This has been one of my favorite projects to work on, because React is such a fun library to use.</p>
                             </div>
                         </div>
                     </div>
