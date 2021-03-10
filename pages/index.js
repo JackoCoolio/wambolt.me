@@ -43,10 +43,10 @@ export default function Home() {
                                 <h2 style={{ textAlign: 'center', width: '100%' }}><Typing text="Hi! I'm Jackson." startDelay='2000' /><Cursor /></h2>
                                 <div id={styles.aboutMeBody}>
                                     <p>
-                                        I'm currently studying at the University of Wisconsin - Madison,
-                                        where I plan to major in Computer Science with a certificate in Mathematics.
+                                        I'm currently studying at the University of Wisconsin–Madison,
+                                        where I plan to major in Computer Science.
                                         Programming has been a passion of mine ever since elementary school, and I've followed that passion for the past
-                                        seven years.
+                                        nine years.
                                     </p>
                                 </div>
                             </div>
