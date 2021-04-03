@@ -26,7 +26,7 @@ class Banner extends React.Component {
                         <div id={styles.portrait}></div>
                     </li>
                     <li className={styles.bannerElement}>
-                        <h1 style={{fontFamily: 'Lemon Milk Bold'}}>Jackson Wambolt</h1>
+                        <h1 style={{fontFamily: 'Lemon Milk Bold'}}>{process.env.NODE_ENV === 'production' ? 'Jackson Wambolt' : 'Development'}</h1>
                     </li>
                     {array}
                 </ul>

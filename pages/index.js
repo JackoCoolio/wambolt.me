@@ -77,12 +77,13 @@ export default function Home() {
                             <div className={`${styles.galleryElement} ${styles.projectElement}`}>
                                 <h2 className={styles.galleryTitle}><Link href="https://github.com/JackoCoolio/wambolt.me" passHref><a>Personal Website</a></Link> (Nov 2020 - Present)</h2>
                                 <h3 className={styles.gallerySubtitle}>A website built with Next.js.</h3>
-                                <p>I finally bit the bullet and decided to learn web development.</p>
+                                <p>Ever since I first learned HTML around nine years ago (to add a <code>&lt;marquee&gt;</code> tag to my Weebly website) I haven't bothered to touch web development,
+                                but React is such a fun and intuitive library, that I couldn't escape it.</p>
                             </div>
                             <div className={`${styles.galleryElement} ${styles.projectElement}`}>
-                                <h2 className={styles.galleryTitle}>Typing Test</h2>
+                                <h2 className={styles.galleryTitle}><Link href="https://github.com/JackoCoolio/typing-test" passHref><a>Typing Test</a></Link> (Jan 2021 - Present)</h2>
                                 <h3 className={styles.gallerySubtitle}>A <Link href="https://monkeytype.com/" passHref><a>Monkeytype</a></Link>-reminiscent typing test built with Electron, React, and Webpack.</h3>
-                                <p>This has been one of my favorite projects to work on, because React is such a fun library to use.</p>
+                                <p>This has been one of my favorite projects to work on, because React is such a fun library to use. I used this and <Link href="https://typeracer.com"><a>Typeracer</a></Link> to learn the Dvorak keyboard layout.</p>
                             </div>
                         </div>
                     </div>
