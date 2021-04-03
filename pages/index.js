@@ -20,15 +20,15 @@ export default function Home() {
             <Banner buttons={[
                 {
                     text: 'About Me',
-                    link: '/'
+                    section: 'aboutme'
                 },
                 {
                     text: 'Projects',
-                    link: '/'
+                    section: 'projects'
                 }
             ]} />
             <Container>
-                <Section title="About Me">
+                <Section title="About Me" id="aboutme">
                     <div className={styles.gallery}>
                         <div className={styles.galleryColumn}>
                             <div className={styles.galleryElement}>
@@ -54,7 +54,7 @@ export default function Home() {
                     </div>
 
                 </Section>
-                <Section title="Projects">
+                <Section title="Projects" id="projects">
                     <div className={styles.gallery}>
                         <div className={styles.galleryColumn}>
                             <div className={`${styles.galleryElement} ${styles.projectElement}`}>

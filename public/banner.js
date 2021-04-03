@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from '../styles/banner.module.scss';
+import containerStyles from '../styles/container.module.scss';
 
-import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll'
+import Link from 'next/link'
 
 class Banner extends React.Component {
 
@@ -13,7 +15,12 @@ class Banner extends React.Component {
                 <li key={button.text} className={styles.bannerElement}>
 
                     <div className={`${styles.bannerLink}`}>
-                        <Link href={button.link} ><h1>{button.text}</h1></Link>
+                        {
+                            button.link ?
+                            <Link href={button.link}><h1>{button.text}</h1></Link>
+                            :
+                            <ScrollLink activeClass="test" to={button.section} smooth="easeInOutQuad" duration={1000} containerId={containerStyles.main}><h1>{button.text}</h1></ScrollLink>
+                        }
                     </div>
                 </li>
             );

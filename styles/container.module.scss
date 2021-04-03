@@ -16,6 +16,7 @@
     left: 0;
     right: 0;
 
+
     overflow-y: auto;
     overflow-x: hidden;
 
@@ -25,16 +26,15 @@
 .section {
     position: relative;
 
-    margin-top: $banner-height;
-
     margin: {
+        top: 0;
         bottom: 0;
         left: 10%;
         right: 10%;
     }
 
     padding: {
-        top: 0;
+        top: $banner-height;
         bottom: $banner-height;
     }
     

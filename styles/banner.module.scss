@@ -43,7 +43,11 @@
     line-height: $banner-height * .8;
 }
 
-.bannerLink:hover {
+.bannerLink a {
+    color: white;
+}
+
+.bannerLink:hover a {
     color: $accent-color;
 
     cursor: pointer;
