@@ -58,7 +58,7 @@ export default function Home() {
                     <div className={styles.gallery}>
                         <div className={styles.galleryColumn}>
                             <div className={`${styles.galleryElement} ${styles.projectElement}`}>
-                                <h2 className={styles.galleryTitle}><Link href="https://github.com/JackoCoolio/harmony_v2" passHref><a>Harmony Engine</a></Link> (Jan 2020 - Present)</h2>
+                                <h2 className={styles.galleryTitle}><Link href="https://github.com/JackoCoolio/harmony_v2" passHref><a>Harmony Engine</a></Link> (Jan 2020 - Nov 2020)</h2>
                                 <h3 className={styles.gallerySubtitle}>An OpenGL game engine written in C++.</h3>
                                 <p>After three (four?) unsuccessful iterations of this project, I've landed on one that I think is sustainable.
                                 Unimportant boilerplate and technical code is abstracted away from the developer, so they only have to worry
@@ -71,6 +71,12 @@ export default function Home() {
                                 <p>Reacting to a message with a star emoji puts the message in a designated "starboard" channel. I'm currently running this bot on a
                                 Raspberry Pi for a personal Discord server.
                                 </p>
+                            </div>
+                            <div className={`${styles.galleryElement} ${styles.projectElement}`}>
+                                <h2 className={styles.galleryTitle}><Link href="https://github.com/JackoCoolio/cheddar" passHref><a>Cheddar</a></Link> (April 2021 - Present)</h2>
+                                <h3 className={styles.gallerySubtitle}>A fun chess engine that doesn't <i>exactly</i> know the objective of the game.</h3>
+                                <p>After watching <Link href="https://www.youtube.com/watch?v=DpXy041BIlA"><a>this interesting video</a></Link>, I was inspired to create my own version.
+                                I plan to make it available online, for others to play against it. Currently, I'm working on writing the engine and once I'm done, I'll get to work on the website.</p>
                             </div>
                         </div>
                         <div className={styles.galleryColumn}>
