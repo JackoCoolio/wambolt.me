@@ -73,7 +73,7 @@ export default function Home() {
                                 </p>
                             </div>
                             <div className={`${styles.galleryElement} ${styles.projectElement}`}>
-                                <h2 className={styles.galleryTitle}><Link href="https://github.com/JackoCoolio/cheddar" passHref><a>Cheddar</a></Link> (April 2021 - Present)</h2>
+                                <h2 className={styles.galleryTitle}><Link href="https://github.com/JackoCoolio/cheddar" passHref><a>Cheddar</a></Link> (April 2021 - May 2021)</h2>
                                 <h3 className={styles.gallerySubtitle}>A fun chess engine that doesn't <i>exactly</i> know the objective of the game.</h3>
                                 <p>After watching <Link href="https://www.youtube.com/watch?v=DpXy041BIlA"><a>this interesting video</a></Link>, I was inspired to create my own version.
                                 I plan to make it available online, for others to play against it. Currently, I'm working on writing the engine and once I'm done, I'll get to work on the website.</p>
@@ -87,15 +87,20 @@ export default function Home() {
                                 but React is such a fun and intuitive library, that I couldn't escape it.</p>
                             </div>
                             <div className={`${styles.galleryElement} ${styles.projectElement}`}>
-                                <h2 className={styles.galleryTitle}><Link href="https://github.com/JackoCoolio/typing-test" passHref><a>Typing Test</a></Link> (Jan 2021 - Present)</h2>
+                                <h2 className={styles.galleryTitle}><Link href="https://github.com/JackoCoolio/typing-test" passHref><a>Typing Test</a></Link> (Jan 2021 - Mar 2021)</h2>
                                 <h3 className={styles.gallerySubtitle}>A <Link href="https://monkeytype.com/" passHref><a>Monkeytype</a></Link>-reminiscent typing test built with Electron, React, and Webpack.</h3>
                                 <p>This has been one of my favorite projects to work on, because React is such a fun library to use. I used this and <Link href="https://typeracer.com"><a>Typeracer</a></Link> to learn the Dvorak keyboard layout.</p>
+                            </div>
+                            <div className={`${styles.galleryElement} ${styles.projectElement}`}>
+                                <h2 className={styles.galleryTitle}><Link href="https://github.com/JackoCoolio/blop" passHref><a>Blop</a></Link> (Aug 2021 - Present)</h2>
+                                <h3 className={styles.gallerySubtitle}>An online game platform built on Next.js and MongoDB.</h3>
+                                <p>I'm working on this project to gain more experience with database technology (in this case MongoDB). A very early development build is currently hosted on Heroku at <Link href="https://jackocoolio-blop.herokuapp.com/" passHref><a>jackocoolio-blop.herokuapp.com</a></Link>.</p>
                             </div>
                         </div>
                     </div>
                 </Section>
                 <div id={styles.footer}>
-                    <h1>© 2020, Jackson Wambolt</h1>
+                    <h1>© 2021, Jackson Wambolt</h1>
                 </div>
             </Container>
         </>
