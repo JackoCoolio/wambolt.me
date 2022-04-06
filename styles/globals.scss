@@ -1,48 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 
 @font-face {
-    font-family: 'Lemon Milk Bold';
-    src: url(../fonts/LEMONMILK-Bold.otf) format('opentype');
+  font-family: "Lemon Milk Bold";
+  src: url(../fonts/LEMONMILK-Bold.otf) format("opentype");
 }
 
 @font-face {
-    font-family: 'Lemon Milk Light';
-    src: url(../fonts/LEMONMILK-Light.otf) format('opentype');
+  font-family: "Lemon Milk Light";
+  src: url(../fonts/LEMONMILK-Light.otf) format("opentype");
 }
 
-@import 'variables.scss';
+@import "variables.scss";
 
 html,
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Fira Code, Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: Fira Code, Segoe UI, -apple-system, BlinkMacSystemFont, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-    color: $accent-color;
-    text-decoration: none;
+  color: $accent-color;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 * {
-    margin: 0;
-    box-sizing: border-box;
-    text-underline-offset: 0.25em;
+  margin: 0;
+  box-sizing: border-box;
+  text-underline-offset: 0.25em;
 }
 
 *::selection {
-    background-color: rgba($accent-color, 0.99);
-    opacity: 100%;
-    color: white;
+  background-color: rgba($accent-color, 0.99);
+  opacity: 100%;
+  color: white;
 }
 
 code {
-    font-family: Fira Code;
-    border-radius: 0.2em;
-    background-color: #121212;
-    color: $accent-color;
+  font-family: Fira Code;
+  border-radius: 0.2em;
+  background-color: #121212;
+  color: $accent-color;
 }

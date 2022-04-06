@@ -1,56 +1,56 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .container {
-    font-family: 'Segoe UI';
-    margin: 0 auto;
+  font-family: "Segoe UI";
+  margin: 0 auto;
 }
 
 #banner {
-    background-color: $secondary-color;
-    position: fixed;
-    height: $banner-height;
-    min-width: 100%;
-    white-space: nowrap;
-    overflow-y: hidden;
-    overflow-x: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    border-bottom: 2px solid $accent-color;
+  background-color: $secondary-color;
+  position: fixed;
+  height: $banner-height;
+  min-width: 100%;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: 2px solid $accent-color;
 }
 
 #bannerMenu {
-    list-style-type: none;
-    padding: $banner-height * .1;
-    height: $banner-height;
-    display: table;
+  list-style-type: none;
+  padding: $banner-height * 0.1;
+  height: $banner-height;
+  display: table;
 }
 
 .bannerElement {
-    display: inline-block;
-    padding: {
-        right: $banner-height * .3;
-    }
-    margin: 0;
+  display: inline-block;
+  padding: {
+    right: $banner-height * 0.3;
+  }
+  margin: 0;
 
-    color: $text-color;
-    font-family: 'Lemon Milk Light';
+  color: $text-color;
+  font-family: "Lemon Milk Light";
 }
 
 .bannerElement h1 {
-    display: table-cell;
-    vertical-align: middle;
-    line-height: $banner-height * .8;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: $banner-height * 0.8;
 }
 
 .bannerLink a {
-    color: white;
+  color: white;
 }
 
 .bannerLink:hover a {
-    color: $accent-color;
+  color: $accent-color;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 // Unused as of now
@@ -65,28 +65,28 @@
 // }
 
 #portrait {
-    position: relative;
-    border-radius: 50%;
-    width: $banner-height * .8;
-    height: $banner-height * .8;
-    background-image: url('/face.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+  position: relative;
+  border-radius: 50%;
+  width: $banner-height * 0.8;
+  height: $banner-height * 0.8;
+  background-image: url("/face.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 450px) {
-    #portrait {
-        visibility: hidden;
-        position: absolute;
-    }
+  #portrait {
+    visibility: hidden;
+    position: absolute;
+  }
 }
 
 #main {
-    position: absolute;
+  position: absolute;
 
-    background-color: #1d1d1d;
-    top: $banner-height;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  background-color: #1d1d1d;
+  top: $banner-height;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

@@ -1,13 +1,13 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 #cursor {
-    border-left-width: 2px;
-    border-left-style: solid;
-    animation: blink .7s steps(1) infinite;
+  border-left-width: 2px;
+  border-left-style: solid;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
-  
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
+}

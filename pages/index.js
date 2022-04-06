@@ -1,12 +1,12 @@
-import Head from "next/head";
+import Head from "next/head"
 
-import Banner from "../public/banner";
-import { Container, Section } from "../public/container";
-import Typing from "../public/typing";
-import Link from "next/link";
-import Cursor from "../public/cursor";
+import Banner from "../public/banner"
+import { Container, Section } from "../public/container"
+import Typing from "../public/typing"
+import Link from "next/link"
+import Cursor from "../public/cursor"
 
-import styles from "../styles/home.module.scss";
+import styles from "../styles/home.module.scss"
 
 export default function Home() {
   return (
@@ -218,5 +218,5 @@ export default function Home() {
         </div>
       </Container>
     </>
-  );
+  )
 }

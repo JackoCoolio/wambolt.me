@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "npm run build && next export"
+    "export": "npm run build && next export",
+    "prettier": "prettier -w pages/*.js public/*.js styles/*.scss"
   },
   "dependencies": {
     "next": "10.0.2",

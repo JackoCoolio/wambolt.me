@@ -1,0 +1,10 @@
+{
+  "semi": false,
+  "arrowParens": "avoid",
+  "jsxSingleQuote": false,
+  "endOfLine": "lf",
+  "quoteProps": "as-needed",
+  "useTabs": false,
+  "tabWidth": 2,
+  "trailingComma": "es5"
+}

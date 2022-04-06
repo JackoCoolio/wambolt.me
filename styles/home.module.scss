@@ -1,88 +1,87 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
 .galleryColumn {
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 4px;
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
 }
 
 .galleryElement {
-    vertical-align: middle;
-    width: 100%;
-    padding: {
-        bottom: 30px;
-        top: 30px;
-        left: 5px;
-        right: 5px;
-    };
+  vertical-align: middle;
+  width: 100%;
+  padding: {
+    bottom: 30px;
+    top: 30px;
+    left: 5px;
+    right: 5px;
+  }
 }
 
 .projectElement {
-    border-bottom: 2px solid $accent-color;
+  border-bottom: 2px solid $accent-color;
 }
 
 .galleryElement h2 {
-    display: inline-block;
+  display: inline-block;
 }
 
 .galleryTitle {
-    color: $text-color;
-    padding-bottom: 20px;
+  color: $text-color;
+  padding-bottom: 20px;
 }
 
 .gallerySubtitle {
-    font-style: italic;
-    color: $secondary-text-color;
-    padding-bottom: 10px;
+  font-style: italic;
+  color: $secondary-text-color;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 800px) {
-    .galleryColumn {
-        flex: 100%;
-        max-width: 100%;
-    }
+  .galleryColumn {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 #aboutMeBody {
-    padding: {
-        top: $banner-height / 4;
-        left: $banner-height / 4;
-        right: $banner-height / 4;
-
-    };
-    font-family: 'Fira Code';
-    font-size: 18px;
+  padding: {
+    top: $banner-height / 4;
+    left: $banner-height / 4;
+    right: $banner-height / 4;
+  }
+  font-family: "Fira Code";
+  font-size: 18px;
 }
 
 #aboutMePicture {
-    background-image: url('../public/aboutme-picture.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../public/aboutme-picture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    background-position: 50% 20%;
+  background-position: 50% 20%;
 
-    border-radius: 30px;
-    
-    width: 100%;
-    min-height: 500px;
+  border-radius: 30px;
+
+  width: 100%;
+  min-height: 500px;
 }
 
 #footer {
-    position: relative;
+  position: relative;
 
-    padding: 20px 0;
-    text-align: center;
+  padding: 20px 0;
+  text-align: center;
 
-    font-family: Lemon Milk Light;
-    font-size: 8px;
+  font-family: Lemon Milk Light;
+  font-size: 8px;
 
-    color: $secondary-text-color;
+  color: $secondary-text-color;
 
-    // bottom: 0;
+  // bottom: 0;
 }
